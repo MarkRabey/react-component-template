@@ -1,6 +1,6 @@
 # React Component Template
 
-A template for create React components or libraries.
+A template for creating React components or libraries.
 
 ## How to use this template
 
