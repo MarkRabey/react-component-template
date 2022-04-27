@@ -1,5 +1,3 @@
-<!-- @format -->
-
 # React Component Template
 
 A template for create React components or libraries.
@@ -34,7 +32,7 @@ npm install project_name
 ## Usage
 
 ```jsx
-import MyComponent from "project_name";
+import MyComponent from 'project_name';
 
 const App = () => {
   return <MyComponent />;
