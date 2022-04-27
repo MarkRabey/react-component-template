@@ -13,3 +13,6 @@ yalc.lock
 # Docs
 docs-build
 .env
+
+# OSX
+.DS_Store
