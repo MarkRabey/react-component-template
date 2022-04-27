@@ -1,0 +1,15 @@
+{
+  "name": "project_name",
+  "version": "0.0.0",
+  "description": "project_description",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.exm.js",
+  "repository": "https://github.com/author_name/project_urlname/",
+  "homepage": "https://github.com/author_name/project_urlname/",
+  "author": "author_name",
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  }
+}
