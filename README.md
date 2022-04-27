@@ -29,10 +29,14 @@ This template creates the initial setup for a React Component Library that is co
 
 # project_name
 
+> project_description
+
+![coverage-branches](./coverage/badge-branches.svg)
+![coverage-functions](./coverage/badge-functions.svg)
+![coverage-lines](./coverage/badge-lines.svg)
+![coverage-statements](./coverage/badge-statements.svg)
 [![npm](https://img.shields.io/npm/v/project_name)](https://www.npmjs.com/project_name)
 [![npm](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/author_name/project_name/blob/main/LICENSE)
-
-project_description
 
 ## Installation
 
