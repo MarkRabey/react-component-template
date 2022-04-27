@@ -55,7 +55,7 @@ npm install project_name
 ## Usage
 
 ```jsx
-import MyComponent from 'project_name';
+import {MyComponent} from 'project_name';
 
 const App = () => {
   return <MyComponent />;
