@@ -16,9 +16,12 @@
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
+    "lint": "tsc && eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "tsc && eslint . --fix --ext .js,.jsx,.ts,.tsx",
     "test": "jest --config jest.config.ts",
     "test:coverage": "yarn test --coverage=true",
-    "test:badges": "jest-coverage-badges"
+    "test:badges": "jest-coverage-badges",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
@@ -35,11 +38,21 @@
     "@testing-library/react-native": "^9.1.0",
     "@types/jest": "^27.4.1",
     "@types/react": "^18.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
     "babel-jest": "^28.0.2",
     "babel-loader": "^8.2.5",
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jest": "^26.1.5",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "husky": "^7.0.4",
     "jest": "^28.0.2",
     "jest-coverage-badges": "^1.1.2",
     "jest-environment-jsdom": "^28.0.2",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.6.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-test-renderer": "^18.1.0",
@@ -67,5 +80,8 @@
       "last 1 safari version"
     ]
   },
-  "dependencies": {}
+  "dependencies": {},
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "yarn lint:fix"
+  }
 }
