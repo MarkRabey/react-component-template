@@ -16,7 +16,9 @@
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test": "jest --config"
+    "test": "jest --config jest.config.ts",
+    "test:coverage": "yarn test --coverage=true",
+    "test:badges": "jest-coverage-badges"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
@@ -36,6 +38,7 @@
     "babel-jest": "^28.0.2",
     "babel-loader": "^8.2.5",
     "jest": "^28.0.2",
+    "jest-coverage-badges": "^1.1.2",
     "jest-environment-jsdom": "^28.0.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
