@@ -20,6 +20,6 @@
     "declaration": true,
     "typeRoots": ["src/@types", "node_modules/@types"]
   },
-  "exclude": ["node_modules", "jest.config.js"],
+  "exclude": ["node_modules", "babel.config.ts", "jest.config.js"],
   "include": ["src", "types.d.ts", "fonts.d.ts"]
 }
