@@ -1,5 +1,11 @@
 name: Rename the project from the template
 on: [push]
+
+permissions:
+  contents: write
+  pull-requests: write
+  packages: write
+
 jobs:
   rename-project:
     if: ${{ !contains (github.repository, '/react-component-template')}}
